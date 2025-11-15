@@ -1,31 +1,39 @@
-// Year in footer
 document.addEventListener("DOMContentLoaded", () => {
+  // Year in footer
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // Project filters
-  const filterButtons = document.querySelectorAll(".filter-btn");
+  // Tabs for projects
+  const tabButtons = document.querySelectorAll(".tab-btn");
   const cards = document.querySelectorAll(".project-card");
 
-  filterButtons.forEach((btn) => {
+  function applyTab(tab) {
+    cards.forEach((card) => {
+      const category = card.getAttribute("data-category");
+
+      if (tab === "all" || tab === category) {
+        card.style.display = "flex";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  tabButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const filter = btn.getAttribute("data-filter");
+      const tab = btn.getAttribute("data-tab");
 
       // set active button
-      filterButtons.forEach((b) => b.classList.remove("active"));
+      tabButtons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
 
-      // show / hide cards
-      cards.forEach((card) => {
-        const category = card.getAttribute("data-category");
-        if (filter === "all" || filter === category) {
-          card.style.display = "flex";
-        } else {
-          card.style.display = "none";
-        }
-      });
+      // apply filter by tab
+      applyTab(tab);
     });
   });
+
+  // default: "all"
+  applyTab("all");
 });

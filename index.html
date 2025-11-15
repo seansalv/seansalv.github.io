@@ -54,21 +54,22 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- PROJECTS (WITH TABS) -->
     <section id="projects" class="section section-alt">
       <div class="container">
         <h2>Projects</h2>
         <p class="section-subtitle">
-          A mix of traditional software engineering projects and Roblox experiences.
-          Use the filters to switch between them.
+          Explore my traditional software engineering work or my Roblox projects using the tabs below.
         </p>
 
-        <div class="project-filters">
-          <button type="button" class="filter-btn active" data-filter="all">All</button>
-          <button type="button" class="filter-btn" data-filter="software">Software / CS</button>
-          <button type="button" class="filter-btn" data-filter="roblox">Roblox</button>
+        <!-- Tabs header -->
+        <div class="tabs-header">
+          <button type="button" class="tab-btn active" data-tab="all">All</button>
+          <button type="button" class="tab-btn" data-tab="software">Software / CS</button>
+          <button type="button" class="tab-btn" data-tab="roblox">Roblox</button>
         </div>
 
+        <!-- Shared grid; JS will show/hide cards based on selected tab -->
         <div class="project-grid">
           <!-- SOFTWARE PROJECTS -->
           <article class="project-card" data-category="software">
@@ -130,7 +131,7 @@
             </div>
           </article>
 
-          <!-- Add more cards here as needed, using data-category="software" or "roblox" -->
+          <!-- Add more cards and set data-category="software" or "roblox" -->
         </div>
       </div>
     </section>

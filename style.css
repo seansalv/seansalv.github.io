@@ -152,29 +152,33 @@ img {
   margin-bottom: 1.5rem;
 }
 
-/* PROJECTS */
+/* TABS */
 
-.project-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+.tabs-header {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 0.2rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
   margin-bottom: 1.5rem;
 }
 
-.filter-btn {
-  padding: 0.4rem 0.9rem;
+.tab-btn {
+  border: none;
+  background: transparent;
+  padding: 0.4rem 1rem;
   border-radius: 999px;
-  border: 1px solid #d1d5db;
-  background: #f9fafb;
   font-size: 0.85rem;
   cursor: pointer;
+  color: #4b5563;
 }
 
-.filter-btn.active {
-  border-color: #111827;
+.tab-btn.active {
   background: #111827;
   color: #f9fafb;
 }
+
+/* PROJECTS */
 
 .project-grid {
   display: grid;
