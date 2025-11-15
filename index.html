@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sean Salvador | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Sean Salvador — Software Engineer and Roblox Scripter." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">SS</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Sean Salvador</h1>
+          <p class="tagline">Software Engineer &amp; Roblox Scripter</p>
+          <p class="hero-desc">
+            I build backend systems, web apps, and gameplay systems in Roblox. 
+            My work spans traditional computer science projects and game experiences 
+            that real players interact with.
+          </p>
+          <div class="hero-links">
+            <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.roblox.com/users/YOUR_ROBLOX_ID/profile" target="_blank" rel="noopener">Roblox</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I am a software engineer with experience in web development, backend systems,
+          and gameplay scripting on Roblox. I enjoy building practical tools, scalable
+          services, and game mechanics that feel smooth and responsive to players.
+          My background combines computer science fundamentals with hands-on experience
+          shipping features people actually use.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="section-subtitle">
+          A mix of traditional software engineering projects and Roblox experiences.
+          Use the filters to switch between them.
+        </p>
+
+        <div class="project-filters">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="software">Software / CS</button>
+          <button type="button" class="filter-btn" data-filter="roblox">Roblox</button>
+        </div>
+
+        <div class="project-grid">
+          <!-- SOFTWARE PROJECTS -->
+          <article class="project-card" data-category="software">
+            <div class="project-tag">Software / CS</div>
+            <h3>Analytics Dashboard</h3>
+            <p>
+              A full-stack analytics dashboard built with Next.js, PostgreSQL, and a REST API.
+              Includes authentication, role-based access, and interactive charts for viewing
+              real-time metrics.
+            </p>
+            <p class="project-tech">Tech: Next.js, PostgreSQL, Chart.js, Node.js</p>
+            <div class="project-links">
+              <a href="https://github.com/YOUR_GITHUB/analytics-dashboard" target="_blank" rel="noopener">View Code</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="software">
+            <div class="project-tag">Software / CS</div>
+            <h3>Shift Scheduling Automation</h3>
+            <p>
+              Scheduling bot that automates selecting optimal shifts for a worker under
+              time-window and priority constraints. Designed to plug into third-party
+              shift platforms via API or browser automation.
+            </p>
+            <p class="project-tech">Tech: Python, Selenium, Optimization, REST</p>
+            <div class="project-links">
+              <a href="https://github.com/YOUR_GITHUB/shift-scheduler" target="_blank" rel="noopener">View Code</a>
+            </div>
+          </article>
+
+          <!-- ROBLOX PROJECTS -->
+          <article class="project-card" data-category="roblox">
+            <div class="project-tag roblox-tag">Roblox</div>
+            <h3>Ledge Grabbing &amp; Climbing System</h3>
+            <p>
+              A custom ledge grabbing and climbing system built in Roblox using Lua.
+              Handles detection, animations, state management, and edge cases like windows 
+              and blockers to create fluid parkour-style movement.
+            </p>
+            <p class="project-tech">Tech: Roblox Lua, Raycasting, State Machines</p>
+            <div class="project-links">
+              <a href="https://www.roblox.com/games/YOUR_GAME_ID" target="_blank" rel="noopener">Play on Roblox</a>
+              <a href="https://github.com/YOUR_GITHUB/roblox-ledge-system" target="_blank" rel="noopener">View Scripts</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="roblox">
+            <div class="project-tag roblox-tag">Roblox</div>
+            <h3>Enemy Sword AI</h3>
+            <p>
+              NPC AI for a Roblox game that chases the player, predicts movement,
+              and uses attack windows and cooldowns for more skill-based combat
+              instead of simple “run straight at the player” behavior.
+            </p>
+            <p class="project-tech">Tech: Roblox Lua, PathfindingService, Finite State Machine</p>
+            <div class="project-links">
+              <a href="https://www.roblox.com/games/YOUR_GAME_ID" target="_blank" rel="noopener">Play on Roblox</a>
+              <a href="https://github.com/YOUR_GITHUB/roblox-sword-ai" target="_blank" rel="noopener">View Scripts</a>
+            </div>
+          </article>
+
+          <!-- Add more cards here as needed, using data-category="software" or "roblox" -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Want to talk about a project, collaboration, or opportunity? Reach out via email
+          or connect with me on LinkedIn.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:YOUR_EMAIL@example.com">Email me</a>
+          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sean Salvador. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
