@@ -4,37 +4,103 @@
   <meta charset="UTF-8" />
   <title>Ledge Grabbing & Climbing System – Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/styles.css" />
+  <!-- go UP one folder to reach the root, then load the shared CSS/JS -->
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <main class="project-detail">
-    <a href="/" class="back-link">← Back to projects</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">SS</div>
+      <nav class="nav">
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <h1>Ledge Grabbing &amp; Climbing System (Roblox)</h1>
-    <p>
-      This system handles ledge detection, grabbing, and climbing using Roblox Lua.
-      It supports different ledge heights, windows, and blockers while keeping movement
-      smooth and responsive.
-    </p>
+  <main class="section section-alt">
+    <div class="container project-detail">
+      <a href="../index.html#projects" class="back-link">← Back to projects</a>
 
-    <section class="video-section">
-      <h2>Showcase Video</h2>
-      <!-- Or if you just have a raw mp4 in your repo / static files -->
-      <video controls class="demo-video">
-        <source src="ledge-vault-system-demo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </section>
+      <h1>Ledge Grabbing &amp; Climbing System (Roblox)</h1>
+      <p class="project-intro">
+        This system handles ledge detection, grabbing, and climbing using Roblox Lua.
+        It supports different ledge heights, windows, and blockers while keeping
+        movement smooth and responsive. It also includes a wall-climbing variant
+        with a decay mechanic to limit how long the player can stay on a surface.
+      </p>
 
-    <section>
-      <h2>What’s Implemented</h2>
-      <ul>
-        <li>Ledge detection using raycasts</li>
-        <li>State handling for idle, grab, climb, and drop</li>
-        <li>Edge cases like windows and blockers</li>
-        <li>Animation hooks for smooth transitions</li>
-      </ul>
-    </section>
+      <!-- Video 1 -->
+      <section class="video-section">
+        <h2>System Overview</h2>
+        <p>
+          High-level look at how the ledge grabbing and climbing system behaves in-game,
+          showing typical player flows and transitions between movement states.
+        </p>
+        <video controls class="demo-video">
+          <source src="ledge-system-overview.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- Video 2 -->
+      <section class="video-section">
+        <h2>Ledge Vaulting Demo</h2>
+        <p>
+          Demonstrates vaulting over different ledge heights, including short vaults,
+          full climbs, and handling of awkward edge positions where the player should
+          not snap or jitter.
+        </p>
+        <video controls class="demo-video">
+          <source src="ledge-vault-system-demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!-- Video 3 -->
+      <section class="video-section">
+        <h2>Wall Climbing with Decay</h2>
+        <p>
+          Shows the wall-climbing behavior with a decay mechanic that gradually reduces
+          climb time. This prevents infinite wall-cling and makes the system feel more
+          skill-based and tunable.
+        </p>
+        <video controls class="demo-video">
+          <source src="wall-climb-decay-demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <section class="details-section">
+        <h2>What’s Implemented</h2>
+        <ul class="feature-list">
+          <li>Ledge detection via forward and downward raycasts to find valid grab points.</li>
+          <li>Finite state machine for idle, grab, climb, vault, wall-climb, and drop states.</li>
+          <li>Configurable rules for windows, blockers, and invalid ledges.</li>
+          <li>Animation hooks and event points for syncing movement with character animations.</li>
+          <li>Decay-based timer to control how long players can cling to walls.</li>
+        </ul>
+      </section>
+
+      <section class="details-section">
+        <h2>Tech &amp; Concepts</h2>
+        <p>
+          Roblox Lua, raycasting, state machines, character movement manipulation,
+          animation events, and parameterized tuning for gameplay feel (ledge distance,
+          raycast length, decay rate, and climb speeds).
+        </p>
+      </section>
+    </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Sean Salvador. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- shared JS also lives in root, so go up one level -->
+  <script src="../script.js"></script>
 </body>
 </html>
