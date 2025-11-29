@@ -23,14 +23,13 @@ const softwareProjects: ProjectCardProps[] = [
     image: "/assets/alphabeta.png",
     technologies: ["Python", "FastAPI", "Alpha-Beta", "TypeScript"],
     github: "https://github.com/seansalv/little_go-agent",
-    demo: "/go-agent.html",
+    demo: "/projects/go-agent",
   },
   {
     title: "Hero Arc",
     description:
       "Solo Leveling–inspired fitness app that turns workouts into RPG quests with Supabase auth, deterministic XP math, and streak tracking.",
-    image:
-      "https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/hero-arc.JPG",
     technologies: ["React Native", "Expo Router", "Supabase", "TypeScript"],
     github: "https://github.com/seansalv/Fitness-App",
   },
@@ -38,19 +37,9 @@ const softwareProjects: ProjectCardProps[] = [
     title: "Shift Auto-Scheduler",
     description:
       "Async Playwright bot that logs into Celayix, watches for self-schedulable shifts, applies rule filters, and books work automatically.",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/celayix-calendar.webp",
     technologies: ["Python", "Playwright", "asyncio", "Web Automation"],
     github: "https://github.com/seansalv/shift-scheduler",
-  },
-  {
-    title: "3D Traveling Salesman GA",
-    description:
-      "Genetic algorithm that evolves 3D TSP tours with tournament selection, swap mutation, canonicalized outputs, and reproducible runs.",
-    image:
-      "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["Python", "NumPy", "GA"],
-    github: "https://github.com/seansalv/genetic-tsp-xyz",
   },
 ];
 
@@ -114,7 +103,7 @@ export default function Home() {
           </h1>
           <p className="text-lg text-slate-400">
             I design and ship end-to-end software—typed data pipelines, automation, and gameplay
-            prototypes—grounded in strong tooling, measurable outcomes, and smooth delivery.
+            prototypes grounded in strong tooling, measurable outcomes, and smooth delivery.
           </p>
         </section>
 
