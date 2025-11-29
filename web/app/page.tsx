@@ -11,8 +11,7 @@ const softwareProjects: ProjectCardProps[] = [
     title: "CS 561 Viterbi Temporal Solver",
     description:
       "Typed Python package that parses HW3 datasets, runs a Viterbi/POMDP solver, and ships CLIs, synthetic data tooling, and pytest coverage.",
-    image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/little-prince.png",
     technologies: ["Python", "Typer", "NumPy", "Pytest", "Ruff"],
     github: "https://github.com/seansalv/pomdp-viterbi-speech",
     demo: "https://github.com/seansalv/pomdp-viterbi-speech#readme",
@@ -21,14 +20,13 @@ const softwareProjects: ProjectCardProps[] = [
     title: "5x5 Go Alpha-Beta Engine",
     description:
       "Competitive Go bot with alpha-beta pruning, aspiration windows, history heuristics, and a FastAPI surface so you can play it in-browser.",
-    image:
-      "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1200&q=80",
+    image: "/assets/alphabeta.png",
     technologies: ["Python", "FastAPI", "Alpha-Beta", "TypeScript"],
     github: "https://github.com/seansalv/little_go-agent",
     demo: "/go-agent.html",
   },
   {
-    title: "Level-Up IRL",
+    title: "Hero Arc",
     description:
       "Solo Leveling–inspired fitness app that turns workouts into RPG quests with Supabase auth, deterministic XP math, and streak tracking.",
     image:
@@ -66,15 +64,6 @@ const robloxProjects: ProjectCardProps[] = [
     technologies: ["Lua", "Roblox Studio", "State Machines", "Raycasting"],
     github: "https://github.com/seansalv/roblox-wall-run-and-decay",
     demo: "/projects/roblox-ledge-system.html",
-  },
-  {
-    title: "Combat Parkour Sandbox",
-    description:
-      "Prototype combines directional dash chains, stamina layers, and reactive VFX for a session-based PvP map built entirely in Roblox Studio.",
-    image:
-      "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?auto=format&fit=crop&w=1200&q=80",
-    technologies: ["Lua", "Roblox Studio", "FX Systems", "Gameplay Design"],
-    demo: "https://www.roblox.com/users/17342072/profile",
   },
 ];
 
