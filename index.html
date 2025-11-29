@@ -1,194 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Sean Salvador | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Sean Salvador — Software Engineer and Roblox Scripter." />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">SS</div>
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sean Salvador | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Sean Salvador — Software Engineer and Roblox Scripter."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">SS</div>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Sean Salvador</h1>
-          <p class="tagline">Software Engineer</p>
-          <p class="hero-desc">
-            I build backend systems, web apps, and gameplay systems in Roblox. 
-            My work spans traditional computer science projects and game experiences 
-            that real players interact with.
-          </p>
-          <div class="hero-links">
-            <a href="https://github.com/seansalv" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/sean-salvador-01826627b/" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://www.roblox.com/users/17342072/profile" target="_blank" rel="noopener">Roblox</a>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Sean Salvador</h1>
+            <p class="tagline">Software Engineer</p>
+            <p class="hero-desc">
+              I build backend systems, web apps, and gameplay systems in Roblox. My work spans
+              traditional computer science projects and game experiences that real players interact
+              with.
+            </p>
+            <div class="hero-links">
+              <a href="https://github.com/seansalv" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/sean-salvador-01826627b/" target="_blank" rel="noopener"
+                >LinkedIn</a
+              >
+              <a href="https://www.roblox.com/users/17342072/profile" target="_blank" rel="noopener"
+                >Roblox</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <p>
-          I’m a software engineer with experience in web development, backend systems, and Roblox gameplay scripting. 
-          I like building practical tools, scalable services, and game mechanics that feel smooth and responsive. 
-          My background combines computer science fundamentals with day-to-day development experience.
-        </p>
-      </div>
-    </section>
-
-    <!-- PROJECTS (WITH TABS) -->
-    <section id="projects" class="section section-alt">
-      <div class="container">
-        <h2>Projects</h2>
-        <p class="section-subtitle">
-          Explore my traditional software engineering work or my Roblox projects using the tabs below.
-        </p>
-
-        <!-- Tabs header -->
-        <div class="tabs-header">
-          <button type="button" class="tab-btn active" data-tab="all">All</button>
-          <button type="button" class="tab-btn" data-tab="software">Software / CS</button>
-          <button type="button" class="tab-btn" data-tab="roblox">Roblox</button>
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I’m a software engineer with experience in web development, backend systems, and Roblox
+            gameplay scripting. I like building practical tools, scalable services, and game
+            mechanics that feel smooth and responsive. My background combines computer science
+            fundamentals with day-to-day development experience.
+          </p>
         </div>
+      </section>
 
-        <!-- Shared grid; JS will show/hide cards based on selected tab -->
-        <div class="project-grid">
-          <!-- SOFTWARE PROJECTS -->
-          <article class="project-card" data-category="software">
-            <div class="project-tag">Software / Mobile</div>
-            <h3>Level-Up IRL</h3>
-            <p>
-              Anime-inspired fitness app that turns real workouts into RPG quests. Users pick a hunter
-              handle, start at E-rank, and earn XP, ranks, and streaks by logging “quests.” Built a
-              Solo Leveling-style HUD, quest modal with deterministic XP math, status screen with a
-              7-day activity strip, and local reminder toggle—all backed by Supabase auth/data.
-            </p>
-            <p class="project-tech">
-              Tech: React Native (Expo Router), TypeScript, Supabase (Auth + Postgres), React Query,
-              Expo Notifications, Day.js
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/seansalv/Fitness-App" target="_blank" rel="noopener">
-                View code
-              </a>
-            </div>
-          </article>
+      <!-- PROJECTS (WITH TABS) -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <h2>Projects</h2>
+          <p class="section-subtitle">
+            Explore my traditional software engineering work or my Roblox projects using the tabs
+            below.
+          </p>
 
-          <article class="project-card" data-category="software">
-            <div class="project-tag">Algorithms / Python</div>
-            <h3>3D Traveling Salesman – Genetic Algorithm</h3>
-            <p>
-              A Python genetic algorithm for a 3D Traveling Salesman Problem. It parses city coordinates, builds a distance matrix, 
-              and evolves a population of tours using tournament selection, single-point crossover, swap mutation, and a repair step
-              to keep permutations valid. After several generations, it canonicalizes the best tour, computes its path length, and
-                writes the final route and cost to an output file.
-            </p>
-            <p class="project-tech">Tech: Python, NumPy</p>
-            <div class="project-links">
-              <a href="https://github.com/seansalv/genetic-tsp-xyz" target="_blank" rel="noopener">View Code</a>
-            </div>
-          </article>
-          <article class="project-card" data-category="software">
+          <!-- Tabs header -->
+          <div class="tabs-header">
+            <button type="button" class="tab-btn active" data-tab="all">All</button>
+            <button type="button" class="tab-btn" data-tab="software">Software / CS</button>
+            <button type="button" class="tab-btn" data-tab="roblox">Roblox</button>
+          </div>
+
+          <!-- Shared grid; JS will show/hide cards based on selected tab -->
+          <div class="project-grid">
+            <!-- SOFTWARE PROJECTS -->
+            <article class="project-card" data-category="software">
+              <div class="project-tag">Temporal Reasoning</div>
+              <h3>CS 561 Viterbi Temporal Solver</h3>
+              <p>
+                Production-ready Python package (<code>temporal_reasoner</code>) that ships a typed
+                POMDP/Viterbi solver, parser, and CLI for Little Prince and Speech datasets. Includes
+                debug summaries, null-action inference toggles, and a compatibility shim for the
+                original HW3 entry point.
+              </p>
+              <p>
+                Tooling bundle adds a synthetic speech generator plus pytest coverage for reference
+                samples and stress datasets, ensuring the solver scales while staying correct.
+              </p>
+              <p class="project-tech">Tech: Python, Typer CLI, NumPy, Pytest, Ruff</p>
+            </article>
+
+            <article class="project-card" data-category="software">
               <div class="project-tag ai-tag">Game AI</div>
               <h3>5x5 Go Alpha-Beta Engine</h3>
               <p>
-                A 5×5 Go agent built with alpha-beta search, transposition tables, killer &amp; history
-                heuristics, aspiration windows, and quiescence search over captures and atari.
-                Exposes a simple API so you can play against it in the browser.
+                A 5×5 Go agent built with alpha-beta search, transposition tables, killer &amp;
+                history heuristics, aspiration windows, and quiescence search over captures and
+                atari. Exposes a simple API so you can play against it in the browser.
               </p>
               <p class="project-tech">Tech: Python, Alpha-Beta, FastAPI, JavaScript</p>
               <div class="project-links">
                 <a href="go-agent.html" target="_blank" rel="noopener">Play vs Agent</a>
-                <a href="https://github.com/seansalv/little_go-agent" target="_blank" rel="noopener">Source</a>
+                <a href="https://github.com/seansalv/little_go-agent" target="_blank" rel="noopener"
+                  >Source</a
+                >
               </div>
-          </article>
-          <article class="project-card" data-category="software">
-            <div class="project-tag">Software / CS</div>
-            <h3>Shift Auto-Scheduler</h3>
-            <p>
-              An async Python bot that logs into the Celayix web portal, searches for
-              self-schedulable shifts, and automatically selects matches based on
-              custom rules. Uses Playwright to control a real browser, parses
-              checkbox-based shift entries, respects minimum search intervals, and
-              supports a dry-run mode for safe testing.
-            </p>
-            <p class="project-tech">
-              Tech: Python, Playwright (async), asyncio, .env, Web Automation
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/seansalv/shift-scheduler" target="_blank" rel="noopener">
-                View code
-              </a>
-            </div>
-        </article>
+            </article>
 
-          <!-- ROBLOX PROJECTS -->
-          <article class="project-card" data-category="roblox">
-            <div class="project-tag roblox-tag">Roblox</div>
-            <h3>Ledge Vaulting & Wall-Run System</h3>
-            <p>
-              A custom movement system built in Roblox using Lua that combines ledge grabbing,
-              vaulting, and wall-running with a decay mechanic. It handles ledge detection,
-              state transitions, animation hooks, and edge cases like windows and blockers to
-              keep movement fluid and responsive.
-            </p>
-            <p class="project-tech">
-              Tech: Roblox Lua, Raycasting, State Machines, Character Movement, Timers
-            </p>
-            <div class="project-links">
-              <!-- detail page with videos + code explanation -->
-              <a href="projects/roblox-ledge-system.html" target="_blank" rel="noopener">
-                Watch demos
-              </a>
+            <article class="project-card" data-category="software">
+              <div class="project-tag">Software / Mobile</div>
+              <h3>Level-Up IRL</h3>
+              <p>
+                Anime-inspired fitness app that turns real workouts into RPG quests. Users pick a
+                hunter handle, start at E-rank, and earn XP, ranks, and streaks by logging
+                “quests.” Built a Solo Leveling-style HUD, quest modal with deterministic XP math,
+                status screen with a 7-day activity strip, and local reminder toggle—all backed by
+                Supabase auth/data.
+              </p>
+              <p class="project-tech">
+                Tech: React Native (Expo Router), TypeScript, Supabase (Auth + Postgres), React
+                Query, Expo Notifications, Day.js
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/seansalv/Fitness-App" target="_blank" rel="noopener"
+                  >View code</a
+                >
+              </div>
+            </article>
 
-              <!-- optional: GitHub repo for the scripts -->
-              <a href="https://github.com/seansalv/roblox-wall-run-and-decay" target="_blank" rel="noopener">
-                View code
-              </a>
-            </div>
-          </article>
+            <article class="project-card" data-category="software">
+              <div class="project-tag">Software / CS</div>
+              <h3>Shift Auto-Scheduler</h3>
+              <p>
+                An async Python bot that logs into the Celayix web portal, searches for
+                self-schedulable shifts, and automatically selects matches based on custom rules.
+                Uses Playwright to control a real browser, parses checkbox-based shift entries,
+                respects minimum search intervals, and supports a dry-run mode for safe testing.
+              </p>
+              <p class="project-tech">
+                Tech: Python, Playwright (async), asyncio, .env, Web Automation
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/seansalv/shift-scheduler" target="_blank" rel="noopener"
+                  >View code</a
+                >
+              </div>
+            </article>
 
+            <article class="project-card" data-category="software">
+              <div class="project-tag">Algorithms / Python</div>
+              <h3>3D Traveling Salesman – Genetic Algorithm</h3>
+              <p>
+                A Python genetic algorithm for a 3D Traveling Salesman Problem. It parses city
+                coordinates, builds a distance matrix, and evolves a population of tours using
+                tournament selection, single-point crossover, swap mutation, and a repair step to
+                keep permutations valid. After several generations, it canonicalizes the best tour,
+                computes its path length, and writes the final route and cost to an output file.
+              </p>
+              <p class="project-tech">Tech: Python, NumPy</p>
+              <div class="project-links">
+                <a href="https://github.com/seansalv/genetic-tsp-xyz" target="_blank" rel="noopener"
+                  >View Code</a
+                >
+              </div>
+            </article>
+
+            <!-- ROBLOX PROJECTS -->
+            <article class="project-card" data-category="roblox">
+              <div class="project-tag roblox-tag">Roblox</div>
+              <h3>Ledge Vaulting & Wall-Run System</h3>
+              <p>
+                A custom movement system built in Roblox using Lua that combines ledge grabbing,
+                vaulting, and wall-running with a decay mechanic. It handles ledge detection, state
+                transitions, animation hooks, and edge cases like windows and blockers to keep
+                movement fluid and responsive.
+              </p>
+              <p class="project-tech">
+                Tech: Roblox Lua, Raycasting, State Machines, Character Movement, Timers
+              </p>
+              <div class="project-links">
+                <!-- detail page with videos + code explanation -->
+                <a href="projects/roblox-ledge-system.html" target="_blank" rel="noopener"
+                  >Watch demos</a
+                >
+                <!-- optional: GitHub repo for the scripts -->
+                <a
+                  href="https://github.com/seansalv/roblox-wall-run-and-decay"
+                  target="_blank"
+                  rel="noopener"
+                  >View code</a
+                >
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            If you wanna talk projects, collabs, or opportunities, you can reach me by email or
+            connect with me on linkedin.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:sean1.salvador1@gmail.com">Email me</a>
+            <a href="https://www.linkedin.com/in/sean-salvador-01826627b/" target="_blank" rel="noopener"
+              >Connect on LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
       <div class="container">
-        <h2>Contact</h2>
-        <p>
-          If you wanna talk projects, collabs, or opportunities, you can reach me by email or connect with me on linkedin.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:sean1.salvador1@gmail.com">Email me</a>
-          <a href="https://www.linkedin.com/in/sean-salvador-01826627b/" target="_blank" rel="noopener">Connect on LinkedIn</a>
-        </div>
+        <p>© <span id="year"></span> Sean Salvador. All rights reserved.</p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Sean Salvador. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
