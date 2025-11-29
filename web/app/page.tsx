@@ -8,7 +8,7 @@ type Tab = "software" | "roblox";
 
 const softwareProjects: ProjectCardProps[] = [
   {
-    title: "CS 561 Viterbi Temporal Solver",
+    title: "Viterbi Temporal Solver",
     description:
       "Typed Python package that parses HW3 datasets, runs a Viterbi/POMDP solver, and ships CLIs, synthetic data tooling, and pytest coverage.",
     image: "/assets/little-prince.png",
