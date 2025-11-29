@@ -15,8 +15,9 @@ const SIZE = 5;
 const HUMAN = 1;
 const BOT = 2;
 
+type Position = { row: number; col: number };
 type Board = number[][];
-type Move = { row: number; col: number } | null;
+type Move = Position | null;
 
 const COLUMN_LABELS = ["A", "B", "C", "D", "E"];
 const ROW_LABELS = ["5", "4", "3", "2", "1"];
@@ -37,8 +38,8 @@ const boardsEqual = (a: Board | null, b: Board | null) => {
   return true;
 };
 
-const neighbors = (row: number, col: number) => {
-  const spots: Move[] = [];
+const neighbors = (row: number, col: number): Position[] => {
+  const spots: Position[] = [];
   if (row > 0) spots.push({ row: row - 1, col });
   if (row < SIZE - 1) spots.push({ row: row + 1, col });
   if (col > 0) spots.push({ row, col: col - 1 });
@@ -48,10 +49,10 @@ const neighbors = (row: number, col: number) => {
 
 const collectGroup = (board: Board, row: number, col: number) => {
   const color = board[row][col];
-  const stack: Move[] = [{ row, col }];
+  const stack: Position[] = [{ row, col }];
   const seen = new Set<string>();
   seen.add(`${row}:${col}`);
-  const group: Move[] = [];
+  const group: Position[] = [];
 
   while (stack.length) {
     const current = stack.pop()!;
@@ -69,7 +70,7 @@ const collectGroup = (board: Board, row: number, col: number) => {
   return group;
 };
 
-const groupLiberties = (board: Board, group: Move[]) => {
+const groupLiberties = (board: Board, group: Position[]) => {
   const libs = new Set<string>();
   for (const stone of group) {
     for (const spot of neighbors(stone.row, stone.col)) {
@@ -79,7 +80,7 @@ const groupLiberties = (board: Board, group: Move[]) => {
   return libs;
 };
 
-const removeGroup = (board: Board, group: Move[]) => {
+const removeGroup = (board: Board, group: Position[]) => {
   for (const stone of group) {
     board[stone.row][stone.col] = 0;
   }
