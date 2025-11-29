@@ -28,7 +28,7 @@ const softwareProjects: ProjectCardProps[] = [
   {
     title: "Hero Arc",
     description:
-      "Solo Leveling–inspired fitness app that turns workouts into RPG quests with Supabase auth, deterministic XP math, and streak tracking.",
+      "Fitness companion that turns workouts into hero quests with Supabase auth, deterministic XP math, and streak tracking.",
     image: "/assets/hero-arc.JPG",
     technologies: ["React Native", "Expo Router", "Supabase", "TypeScript"],
     github: "https://github.com/seansalv/Fitness-App",
