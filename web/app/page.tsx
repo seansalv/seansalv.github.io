@@ -100,11 +100,12 @@ export default function Home() {
       <main className="space-y-16">
         <section className="mx-auto max-w-4xl px-4 pt-16 text-center sm:px-6 lg:px-8">
           <h1 className="mb-4 text-3xl text-slate-200">
-            Engineering reliable platforms and expressive technical systems.
+            Building algorithms, mobile apps, and automation tools.
           </h1>
           <p className="text-lg text-slate-400">
-            I design and ship end-to-end software—typed data pipelines, automation, and gameplay
-            prototypes grounded in strong tooling, measurable outcomes, and smooth delivery.
+            I write code for search algorithms, mobile apps, and web automation. Most of my work
+            lives in Python and TypeScript, with a focus on clean implementations and practical
+            solutions.
           </p>
         </section>
 
