@@ -32,6 +32,7 @@ const softwareProjects: ProjectCardProps[] = [
     image: "/assets/hero-arc.JPG",
     technologies: ["React Native", "Expo Router", "Supabase", "TypeScript"],
     github: "https://github.com/seansalv/Fitness-App",
+    demo: "https://fitness-app-web-sage.vercel.app/",
   },
   {
     title: "Shift Auto-Scheduler",
