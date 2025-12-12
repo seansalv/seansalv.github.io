@@ -61,12 +61,8 @@ export function ProjectCard({
           {demo && (
             <a
               href={demo}
-              target={demo.startsWith("/") ? undefined : "_blank"}
-              rel={
-                demo.startsWith("/")
-                  ? undefined
-                  : "noopener noreferrer"
-              }
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-full bg-sky-500 px-5 py-2 text-slate-950 transition-colors hover:bg-sky-400"
             >
               <ExternalLink className="h-4 w-4" />

@@ -8,7 +8,7 @@ type Tab = "software" | "roblox";
 
 const softwareProjects: ProjectCardProps[] = [
   {
-    title: "Viterbi Temporal Solver",
+    title: "CS 561 Viterbi Temporal Solver",
     description:
       "Typed Python package that parses HW3 datasets, runs a Viterbi/POMDP solver, and ships CLIs, synthetic data tooling, and pytest coverage.",
     image: "/assets/little-prince.png",
@@ -23,16 +23,23 @@ const softwareProjects: ProjectCardProps[] = [
     image: "/assets/alphabeta.png",
     technologies: ["Python", "FastAPI", "Alpha-Beta", "TypeScript"],
     github: "https://github.com/seansalv/little_go-agent",
-    demo: "/projects/go-agent",
+    demo: "/go-agent.html",
+  },
+  {
+    title: "FFXIV Market Analyzer",
+    description:
+      "Data-driven dashboard for analyzing Final Fantasy XIV marketboard profitability. Fetches real-time market data, calculates profit margins and ROI, and provides comprehensive filtering across NA regions with recipe cost analysis.",
+    image: "/assets/ffxiv-analyzer.avif",
+    technologies: ["Next.js 14", "TypeScript", "Supabase", "SWR", "Tailwind CSS"],
+    demo: "https://ffxiv-market-analyzer-ylpy.vercel.app/",
   },
   {
     title: "Hero Arc",
     description:
-      "Fitness companion that turns workouts into hero quests with Supabase auth, deterministic XP math, and streak tracking.",
+      "Solo Leveling–inspired fitness app that turns workouts into RPG quests with Supabase auth, deterministic XP math, and streak tracking.",
     image: "/assets/hero-arc.JPG",
     technologies: ["React Native", "Expo Router", "Supabase", "TypeScript"],
     github: "https://github.com/seansalv/Fitness-App",
-    demo: "https://fitness-app-web-sage.vercel.app/",
   },
   {
     title: "Shift Auto-Scheduler",
@@ -100,12 +107,11 @@ export default function Home() {
       <main className="space-y-16">
         <section className="mx-auto max-w-4xl px-4 pt-16 text-center sm:px-6 lg:px-8">
           <h1 className="mb-4 text-3xl text-slate-200">
-            Building algorithms, mobile apps, and automation tools.
+            Engineering reliable platforms and expressive technical systems.
           </h1>
           <p className="text-lg text-slate-400">
-            I write code for search algorithms, mobile apps, and web automation. Most of my work
-            lives in Python and TypeScript, with a focus on clean implementations and practical
-            solutions.
+            I design and ship end-to-end software—typed data pipelines, automation, and gameplay
+            prototypes grounded in strong tooling, measurable outcomes, and smooth delivery.
           </p>
         </section>
 
