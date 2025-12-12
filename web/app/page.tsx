@@ -23,7 +23,7 @@ const softwareProjects: ProjectCardProps[] = [
     image: "/assets/alphabeta.png",
     technologies: ["Python", "FastAPI", "Alpha-Beta", "TypeScript"],
     github: "https://github.com/seansalv/little_go-agent",
-    demo: "/go-agent.html",
+    demo: "/projects/go-agent",
   },
   {
     title: "FFXIV Market Analyzer",
